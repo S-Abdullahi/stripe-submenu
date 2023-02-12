@@ -138,11 +138,13 @@ body {
 }
 
 .submenu{
-  display: none;
+  /* display: none; */
+  display: block;
   background-color: white;
   position: absolute;
   padding: 2rem;
   left: 45%;
+  visibility: hidden;
   top: 5rem;
   transform: translateX(-50%);
   border-radius: 7px;
@@ -151,8 +153,9 @@ body {
 }
 
 .submenu.show{
-  display: block;
   left: 50%;
+  visibility: visible;
+  transition: all 0.3s linear;
 }
 
 .submenu-item-con{
